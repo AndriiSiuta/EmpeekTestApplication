@@ -1,0 +1,14 @@
+<div class="item-wrapper">
+  <span class="item-description">
+    {{ item.title }}
+  </span>
+
+  <span class="comments-count">
+    {{ item.commentsCount }}
+  </span>
+
+  <a
+    class="button-delete"
+    (click)="emitDeleteItem(item.id)"
+  >Delete</a>
+</div>

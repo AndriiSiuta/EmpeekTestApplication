@@ -1,0 +1,17 @@
+<ng-container *ngIf="currentItem$ | async as currentItem">
+  <div
+    class="comments-title"
+  >Comments #{{ currentItem.id }}
+  </div>
+  <div class="comments-list">
+    <comment-item
+      [comment]="currentItem"
+    ></comment-item>
+  </div>
+
+  <add-new-comment
+    [activeItem]="currentItem"
+    (updateComments)="addNewCommentToState($event)"
+  >
+  </add-new-comment>
+</ng-container>

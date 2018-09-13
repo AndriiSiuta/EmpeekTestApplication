@@ -1,0 +1,10 @@
+@import 'common/styles/colors';
+@import 'common/styles/typography';
+@import 'common/styles/variables';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}

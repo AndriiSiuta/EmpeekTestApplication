@@ -1,0 +1,10 @@
+<input
+  [(ngModel)]="newItem"
+  (input)="getNewItem($event.target.value)"
+  type="text"
+  placeholder="Type name here..."
+  class="add-new-item__input"
+>
+<a
+  (click)="addNewItem()"
+  class="add-button">Add new</a>

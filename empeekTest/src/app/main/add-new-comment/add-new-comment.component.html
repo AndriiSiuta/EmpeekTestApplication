@@ -1,0 +1,9 @@
+<div class="avatar"></div>
+
+<textarea
+  [(ngModel)]="newComment"
+  cols="55"
+  rows="6"
+  class="write-comment"
+  (keyup)="emitComment($event)"
+></textarea>

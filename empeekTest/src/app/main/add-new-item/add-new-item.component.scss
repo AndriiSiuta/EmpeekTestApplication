@@ -1,0 +1,29 @@
+@import 'colors.scss';
+@import 'variables.scss';
+
+:host {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+.add-new-item {
+  &__input {
+    border: 1.5px solid $input-border;
+    border-radius: 5px;
+    flex: 2;
+    padding-left: 0.3rem;
+    margin-right: 0.5rem;
+  }
+}
+
+
+.add-button {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: $background-button;
+  color: $foreground;
+  width: 5rem;
+  border-radius: 5px;
+}

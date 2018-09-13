@@ -1,0 +1,17 @@
+<div
+  *ngFor="let comment of comments; let i = index"
+  class="comment"
+>
+  <div
+    class="avatar"
+    [class.avatar--light]="i % 2 === 0"
+    [class.avatar--dark]="i % 2 !== 0"
+  >
+
+  </div>
+
+  <div class="comment-item">
+    {{ comment }}
+  </div>
+
+</div>

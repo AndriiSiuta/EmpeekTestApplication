@@ -1,0 +1,32 @@
+@import 'colors.scss';
+
+.comment {
+  display: flex;
+  padding: 0.5rem 0 0.5rem 0;
+
+  border-bottom: 1.5px solid $input-border;
+}
+
+.comment:last-child {
+  border: 0;
+}
+
+.avatar {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+
+  &--light {
+    background-color: $avatar-light;
+  }
+
+  &--dark {
+    background-color: $avatar-dark;
+  }
+}
+
+.comment-item {
+  width: 400px;
+  word-wrap: break-word;
+}
+

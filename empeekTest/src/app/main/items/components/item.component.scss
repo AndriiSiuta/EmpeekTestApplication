@@ -1,0 +1,38 @@
+@import 'colors.scss';
+
+.item-wrapper {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid $input-border;
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  .item-description {
+    color: $items-text-color;
+    font-weight: bold;
+  }
+
+  .comments-count {
+    font-weight: bold;
+    font-size: 0.7em;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 1.8rem;
+    min-height: 1.2rem;
+    line-height: 1.2rem;
+
+    background-color: $background-button;
+    color: $foreground;
+    margin-left: 0.2rem;
+  }
+
+  .button-delete {
+    border-radius: 5px;
+    margin-left: auto;
+    padding: 0.5rem 1.3rem;
+    color: $delete-button-color;
+    border: 1.5px solid $delete-button-border;
+    cursor: pointer;
+  }
+}
+

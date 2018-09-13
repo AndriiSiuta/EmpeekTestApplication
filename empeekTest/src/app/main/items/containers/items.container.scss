@@ -1,0 +1,25 @@
+@import 'colors.scss';
+@import 'variables.scss';
+
+:host {
+  height: 60%;
+  margin-right: 20px;
+  padding: 0.3rem 0.5rem 0 1rem;
+  display: flex;
+  flex: 5;
+  flex-direction: column;
+  background-color: $foreground;
+  box-shadow: $box-shadow-default;
+}
+
+.items-title {
+  font-size: $font-title;
+  padding-bottom: 0.5rem;
+  color: $title-color;
+}
+
+.items-container {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}

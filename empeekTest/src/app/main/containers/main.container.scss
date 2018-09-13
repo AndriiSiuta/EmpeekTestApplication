@@ -1,0 +1,14 @@
+@import 'colors.scss';
+
+:host {
+  display: flex;
+  height: 100%;
+  background-color: $main-background;
+}
+
+.main-section {
+  flex: 1 0 auto;
+  justify-content: space-around;
+  padding: 1rem;
+  display: flex;
+}

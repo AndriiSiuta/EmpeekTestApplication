@@ -1,0 +1,22 @@
+@import 'colors.scss';
+
+.write-comment {
+  resize: none;
+  border: 1.5px solid $input-border;
+}
+
+.write-comment:focus {
+  outline: none;
+}
+
+:host {
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.avatar {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+  background-color: $avatar-comment;
+}

@@ -1,0 +1,23 @@
+<div class="items-title">
+  Items
+</div>
+
+<ng-container *ngIf="state$ | async as state">
+  <div class="items-container">
+    <add-new-item
+      [idList]="state.itemsIds"
+      (createdItem)="addItemToState($event)"
+    >
+    </add-new-item>
+
+    <item
+      (deleteItem)="deleteItemFromState($event)"
+      *ngFor="let item of state.items"
+      [item]="item"
+      (click)="changeQueryParam(item.id)"
+    ></item>
+  </div>
+</ng-container>
+
+
+
